@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    background-image: url('../img/Schermata\ 2021-10-19\ alle\ 23.58.53.png');
+    background-position: center;
+    height: 100vh auto; 
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+#homepage{
+    /* background: url('../img/index.png'); */
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    /* background-size: 100%; */
+    height: 130vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#mapid { 
+    height: 400px; 
+}
+
+
+.container{
+    text-align: center;
+    max-width: 400px;
+    margin-top: 2em ;
+    
+
+}
+#container-input{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    padding: 1em;
+    font-weight: bold;
+    /* background-color: burlywood; */
+}
+/* Set the size of the div element that contains the map */
+
+.card{
+      width: 15em;
+      margin: 2em;
+  }
+
+#infoCity{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 30px;
+    
+}
+#btn{
+    width: 100%;
+
+}
+#btn:hover{
+    background-color: cadetblue;
+}
+#btn_search:hover{
+    background-color: cadetblue;
+
+}
+#health{
+    text-align: center;
+    padding: 0.5em;
+}
+#city{
+    width: 100%;
+    text-align: center;
+}
+/* #no2{
+    background-color: cadetblue;
+    height: 100px;
+} */
+.info_min{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info_min div{
+    font-size: 20px;
+    /* background-color: rgb(167, 214, 255); */
+    padding: 0.5em;
+}
+#no2 span{
+    font-weight: 900;
+}
+
+#aqi{
+    justify-content: center;    
+    text-align: center;
+    height: 60px;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(103, 103, 40);
+    border-radius: 10%;
+    width: 100px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.data-container{
+    margin: auto;
+}
+element.style{
+    text-align: center;
+}
+.container_info{
+    margin:auto
+}
+#pollution{
+    width: 50%;
+    border-radius: 20px;
+    /* box-shadow: 10px 10px 8px #2d2d2d; */
+    position: relative;
+    /* padding: 0.1em 0.5em 01em 0.5em; */
+    padding: 1em;
+}
+#pollution::after{
+    content: "";
+
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* position: absolute; */
+    z-index: -2;  
+}
+.min-info{
+    /* font-size: 30px;
+    /* background-color: aliceblue; */
+    padding: 3em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20; 
+}
+.container-min{
+    margin-top: 15em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: none;
+
+}
+.card-group{
+    display: flex;
+    margin-top: 15em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: none;
+
+}
+ .tooltip-content {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-color: #fff;
+    padding: .5em;
+  }
+  .tooltip-wrap:hover .tooltip-content {
+    display: block;
+  }
+  div.hoverEffect:hover {
+    color:#fff;
+}
+
+div.hoverEffect child {
+    display:none;
+}
+
+div.hoverEffect:hover child {
+    display:block;
+}
+.info_min{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/* .info_min div{
+    border-radius: 10%;
+}  */
+/* .min-det{
+    background-color: aqua;
+    border-radius: 50%;
+} */
+input{
+    border-radius: 50%;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: popup 1s;
+  }
